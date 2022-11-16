@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+html::-webkit-scrollbar-track{
+    background: #000;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #4169e1;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    padding: 0 1rem;
+    background: #010405;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    text-align: start;
+}
+nav .top{
+    margin-top: 15%;
+}
+nav .logo{
+    width: 5rem;
+    position: relative;
+    border: 0.3rem solid #01d758;
+    background: #000;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 auto 1rem;
+}
+nav .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+nav a{
+    color: #fff;
+    display: block;
+    font-size: 1.1rem;
+}
+
+nav > .navigation{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 7rem;
+}
+
+nav > .navigation > li > a, nav > .option > li > a{
+    padding: 5px;
+    background: #010405;
+    transition: .7s ease-in;
+    -webkit-transition: .7s ease-in;
+    -moz-transition: .7s ease-in;
+    -ms-transition: .7s ease-in;
+    -o-transition: .7s ease-in;
+}
+nav > .navigation > li > a > .uil, nav > .option > li > a > .uil{
+    margin-right: .5rem;
+    font-size: 1.3rem;
+}
+nav > .navigation > li > a:hover{
+    background: rgb(25, 25, 25, 0.4);
+    color: #01d758;
+    transition: .7s ease-in;
+    -webkit-transition: .7s ease-in;
+    -moz-transition: .7s ease-in;
+    -ms-transition: .7s ease-in;
+    -o-transition: .7s ease-in;
+}
+nav > .option > li > a:hover{
+    color: #01d758;
+    transition: .7s ease-in;
+    -webkit-transition: .7s ease-in;
+    -moz-transition: .7s ease-in;
+    -ms-transition: .7s ease-in;
+    -o-transition: .7s ease-in;
+}
+nav > .navigation .active{
+    background: rgb(25, 25, 25, 0.4);
+    color: #01d758;
+}
+
+nav li:last-child{
+    border: none;
+}
+
+
+
+
+main{
+    text-align: center;
+    width: 60%;
+    margin-left: 15%;
+    color: #f8f9f9;
+    position: relative;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    background: #000;
+    height: 4rem;
+    width: 60%;
+    line-height: 3.125rem;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+header ul{
+    display: flex;
+    line-height: 3.125rem;
+}
+header ul li a{
+    padding: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+    transition: .7s ease-in;
+    -webkit-transition: .7s ease-in;
+    -moz-transition: .7s ease-in;
+    -ms-transition: .7s ease-in;
+    -o-transition: .7s ease-in;
+}
+header ul li a:hover{
+    color: #01d758;
+    transition: .7s ease-in;
+    -webkit-transition: .7s ease-in;
+    -moz-transition: .7s ease-in;
+    -ms-transition: .7s ease-in;
+    -o-transition: .7s ease-in;
+}
+.notification{
+    position: relative;
+    display: inline-block;
+}
+.notification span{
+    font-size: .9rem;
+}
+.notification .badge {
+  position: absolute;
+  top: 15px;
+  right: 2px;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #01d758;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.input_container1{
+    display: flex;
+    height: 2rem;
+    background: rgb(25, 25, 25, 0.4);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.log_in{
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    background: rgb(25, 25, 25, 0.4);
+    width: max-content;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.log_in .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: auto;
+    height: 1.5rem;
+    margin: .4rem;
+}
+.log_in .content .img{
+    width: 2rem;
+    position: relative;
+    border: 0.1rem solid #01d758;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    /*margin: 0 auto 1rem;*/
+}
+
+.log_in .content .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.input_container3{
+    display: flex;
+    height: 2rem;
+    border: 1px solid #fff;
+    padding: 0 1rem;
+    margin: .5rem 5%;
+}
+
+header .input_container1  .uil{
+    padding: -30px;
+    margin: -10px;
+    background: transparent;
+    color: white;
+    min-width: 70px;
+}
+.input_container3 .uil{
+    padding: 10px;
+    margin: -10px;
+    background: transparent;
+    color: white;
+    min-width: 70px;
+}
+
+
+  
+header .input1, .input_container3 .input1{
+    padding: 10px;
+    outline: none;
+    height: 2rem;
+    width: 100%;
+    background: rgb(25, 25, 25, 0.4);
+    color: #fff;
+    border: none;
+}
+.input_container3 .input1{
+    background: none;
+}
+
+header .input1::placeholder, .input_container3 .input1::placeholder{
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+.banner{
+    background: #070707;
+    height: auto;
+    overflow: hidden;
+}
+.banner .container{
+    padding: 0 1rem;
+}
+.banner .card1{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 5rem;
+    text-align: start;
+}
+.banner .card1 .img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 1rem;
+}
+.banner .card1 .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.card1 .descri{
+    position: absolute;
+    bottom: 35%;
+    left: 1rem;
+}
+.card1 .descri span{
+    display: inline-block;
+    position: relative;
+}
+.card1 .descri h1{
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+}
+.card1 .descri p{
+    font-size: 1rem;
+}
+.card1 .descri h5{
+    padding-top: 1rem;
+    letter-spacing: 2px;
+    -webkit-box-reflect: below -0.46rem linear-gradient(transparent, #0004);
+}
+
+.card1 .text{
+    position: absolute;
+    bottom: 3rem;
+    left: 1rem;
+}
+.card1 .text button, .button button{
+    border: none;
+    outline: none;
+    background: #01d758;
+    color: #fff;
+    padding: .7rem 1.3rem;
+    cursor: pointer;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+    transition: .7s ease-in;
+    -webkit-transition: .7s ease-in;
+    -moz-transition: .7s ease-in;
+    -ms-transition: .7s ease-in;
+    -o-transition: .7s ease-in;
+    font-size: 1rem;
+    font-size: 700;
+}
+.button button{
+    padding: .3rem .6rem;
+}
+.card1 .text button:hover, .button button:hover{
+    background: #4169e1;
+    transition: .7s ease-in;
+    -webkit-transition: .7s ease-in;
+    -moz-transition: .7s ease-in;
+    -ms-transition: .7s ease-in;
+    -o-transition: .7s ease-in;
+}
+.title h2, .card1 h2{
+    text-align: start;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 1%;
+}
+.title h2{
+    padding-top: 1rem;
+}
+.cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.card_bottom{
+    padding-bottom: 1rem;
+}
+.card .img{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.cards .card .name{
+    position: relative;
+}
+.cards .card .name h3{
+    position: absolute;
+    bottom: 1rem;
+    left: .5rem;
+}
+.cards .card .button{
+    position: relative;
+}
+.cards .card .button button{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.chat{
+    width: 25.1%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    background: #010405;
+}
+.chat .container{
+    display: block;
+}
+.chat .container .part1 .title{
+    padding-top: 20%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.chat .container .part1 .title .amis{
+    /*text-align: start;
+    padding-bottom: .8rem;
+    padding: 0 1rem;*/
+   /* padding-top: .8rem;
+    padding-bottom: .5rem;*/
+    justify-content: space-around;
+    padding: 3%;
+}
+.chat .container .part1 .title .amis h3{
+    font-size: 1.5rem;
+    color: #01d758;
+    letter-spacing: 2px;
+}
+.part1 .user .img, .part2 .request .img{
+    width: 3rem;
+    position: relative;
+    background: #000;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    /*margin: 0 auto 1rem;
+    */
+}
+.part1 .user .img img, .part2 .request .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.part2 .request, .part1 .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: .2rem;
+    padding: auto;
+}
+.part1 .user, .part2 .request{
+    margin-bottom: .5rem;
+}
+.part1 .user .text, .part2 .request .text{
+    font-size: 90%;
+    color: #fff;
+}
+
+.part2 .content .title{
+    justify-content: space-around;
+    padding: 3%;
+}
+.part2 .content .title h3{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: #01d758;
+}
+
+.part1 button, .part2 button{
+    border: none;
+    outline: none;
+    background: #01d758;
+    color: #fff;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-radius: .1rem;
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    -ms-border-radius: .1rem;
+    -o-border-radius: .1rem;
+    transition: .7s ease-in;
+    -webkit-transition: .7s ease-in;
+    -moz-transition: .7s ease-in;
+    -ms-transition: .7s ease-in;
+    -o-transition: .7s ease-in;
+    font-size: .8rem;
+    font-size: 700;
+}
+.part2 button{
+    padding: .3rem .6rem;
+}
+.part1 button:hover, .part2 button:hover{
+    background: #ff0000;
+    transition: .7s ease-in;
+    -webkit-transition: .7s ease-in;
+    -moz-transition: .7s ease-in;
+    -ms-transition: .7s ease-in;
+    -o-transition: .7s ease-in;
+}
+.part2 .choice{
+    display: flex;
+    gap: .5rem;
+}
+.choice .primary{
+    background: transparent;
+    border: 1px solid #fff;
+}
+.choice .primary:hover{
+    background: #ff0000;
+    border: none;
+}
+
+.part1{
+    margin-bottom: 1.8rem;
+}
+
+@media (min-width: 1550px){
+    .part1 .user .text{
+        font-size: 100%;
+    }
+    .part2 .request .text{
+        font-size: 100%;
+    }
+
+    .chat .container .part1 .title .amis,
+    .part2 .content .title{
+        padding: 7%;
+    }
+}
+
+
+@media (max-width: 1024px){
+    nav a{
+        font-size: 70%;
+    }
+
+    .card1 .descri{
+        bottom: 30%;
+    }
+
+    .part1 .user .text{
+        font-size: 70%;
+    }
+    .part2 .request .text{
+        font-size: 50%;
+    }
+}
